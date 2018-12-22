@@ -30,7 +30,7 @@ function the_url( $url ) {
 add_filter( 'login_headerurl', 'the_url' );
 
 function my_custom_login_logo() {
-	echo '<style type="text/css">                                                           
+	echo '<style type="text/css" {background: black;}>                                                           
 			h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-full.svg) !important; 
 			height: 120px !important; width: 410px margin:0 auto; !important;}                            
 	</style>';
