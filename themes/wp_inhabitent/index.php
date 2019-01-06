@@ -6,11 +6,38 @@
  */
 
 get_header(); ?>
+<section>
+	<h1>Shop Stuff</h1>
+	<div class="wrapper-stuff">
+		<div class="shop-stuff">
+			<img src="<?php echo get_template_directory_uri().'/images/product-type-icons/do.svg'?>" alt="Do" width="70px">
+			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+			<button>Do stuff</button>
+		</div>
 
+		<div class="shop-stuff">
+			<img src="<?php echo get_template_directory_uri().'/images/product-type-icons/do.svg'?>" alt="Do" width="70px">
+			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+			<button>Do stuff</button>
+		</div>
+
+		<div class="shop-stuff">
+			<img src="<?php echo get_template_directory_uri().'/images/product-type-icons/do.svg'?>" alt="Do" width="70px">
+			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+			<button>Do stuff</button>
+		</div>
+
+		<div class="shop-stuff">
+			<img src="<?php echo get_template_directory_uri().'/images/product-type-icons/do.svg'?>" alt="Do" width="70px">
+			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+			<button>Do stuff</button>
+		</div>
+	</div>
+</section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -36,5 +63,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -1,0 +1,11 @@
+.site-footer{
+  background-image: url("../../images/dark-wood@2x.png"); 
+  background-size: cover;
+}
+
+.footer-info{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 50%;
+  justify-content: space-evenly;
+}

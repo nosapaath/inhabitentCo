@@ -47,3 +47,33 @@
 .bypostauthor {
 	display: block;
 }
+
+/* Content wrapper */
+.content-area{
+	max-width: 1120px;
+	margin: 0 auto;
+}
+// .site-main{
+// 	width:70%;
+// }
+
+// #asideside { 
+//   width: 30%;
+// }
+.entry-header{
+	position: relative;
+}
+
+.entry-title{
+	background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+	left: 0;
+	padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+}
+

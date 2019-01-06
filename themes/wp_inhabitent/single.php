@@ -26,7 +26,11 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		<aside id="asideside">
+		<?php get_sidebar(); ?>
+	</aside>
 	</div><!-- #primary -->
+	
+	
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

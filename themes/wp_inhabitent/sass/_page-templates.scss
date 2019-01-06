@@ -3,3 +3,38 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.hero-front{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../../images/home-hero.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.logo-hero{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-shop{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-shop{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.shop-items{
+  border: 1px solid black;
+  width: 20%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+

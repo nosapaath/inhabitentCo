@@ -22,9 +22,16 @@ function red_starter_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html( 'Primary Menu' ),
-	) );
+	add_theme_support('menus');
+
+	register_nav_menus(
+
+    array(
+			'primary' => __( 'Primary Menu' ),
+      'top_menu' => __('Top Menu', 'theme'),
+      'footer_menu' => __('Footer Menu', 'theme'),
+    )
+);
 
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
@@ -97,7 +104,7 @@ function load_stylesheets()
 {
 		// wp_register_style('stylesheet', get_template_directory_uri() . '/fonta.css',array(),false,'all');
 		wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-    wp_enqueue_style('stylesheet', get_template_directory_uri() . '/fonta.css');
+    wp_enqueue_style('inhabitent-stylesheet', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
@@ -110,3 +117,9 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+/*
+* Menu Customization
+*/
+

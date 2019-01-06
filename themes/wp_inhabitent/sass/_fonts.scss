@@ -1,3 +1,56 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./fonts/Merriweather/Merriweather-Bold.woff2') format('woff2'),
+      url('./fonts/Merriweather/Merriweather-Bold.woff') format('woff'),
+      url('./fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./fonts/Merriweather/Merriweather-BoldItalic.woff2') format('woff2'),
+      url('./fonts/Merriweather/Merriweather-BoldItalic.woff') format('woff'),
+      url('./fonts/Merriweather/Merriweather-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./fonts/Merriweather/Merriweather-Light.woff2') format('woff2'),
+      url('./fonts/Merriweather/Merriweather-Light.woff') format('woff'),
+      url('./fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./fonts/Merriweather/Merriweather-LightItalic.woff2') format('woff2'),
+      url('./fonts/Merriweather/Merriweather-LightItalic.woff') format('woff'),
+      url('./fonts/Merriweather/Merriweather-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Novecentosanswide';
+  src: url('./fonts/Novecentosanswide/Novecentosanswide-DemiBold.woff2') format('woff2'),
+      url('./fonts/Novecentosanswide/Novecentosanswide-DemiBold.woff') format('woff'),
+      url('./fonts/Novecentosanswide/Novecentosanswide-DemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecentosanswide-Normal';
+  src: url('./fonts/Novecentosanswide/Novecentosanswide-Normal.woff2') format('woff2'),
+      url('./fonts/Novecentosanswide/Novecentosanswide-Normal.woff') format('woff'),
+      url('./fonts/Novecentosanswide/Novecentosanswide-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

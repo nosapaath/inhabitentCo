@@ -225,6 +225,42 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("./fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("./fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("./fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("./fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("./fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("./fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("./fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("./fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecentosanswide';
+  src: url("./fonts/Novecentosanswide/Novecentosanswide-DemiBold.woff2") format("woff2"), url("./fonts/Novecentosanswide/Novecentosanswide-DemiBold.woff") format("woff"), url("./fonts/Novecentosanswide/Novecentosanswide-DemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecentosanswide-Normal';
+  src: url("./fonts/Novecentosanswide/Novecentosanswide-Normal.woff2") format("woff2"), url("./fonts/Novecentosanswide/Novecentosanswide-Normal.woff") format("woff"), url("./fonts/Novecentosanswide/Novecentosanswide-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -419,32 +455,53 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
+#primary-menu {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nav-wrapper {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
+      float: right;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -456,7 +513,8 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 200px;
+        text-decoration: none; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -606,6 +664,26 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Content wrapper */
+.content-area {
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.entry-header {
+  position: relative; }
+
+.entry-title {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -670,3 +748,81 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero-front {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../../images/home-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/home-hero.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; }
+
+.logo-hero {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.hero-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.wrapper-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.shop-items {
+  border: 1px solid black;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.site-footer {
+  background-image: url("../../images/dark-wood@2x.png");
+  background-size: cover; }
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
