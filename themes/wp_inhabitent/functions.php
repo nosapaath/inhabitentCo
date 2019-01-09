@@ -104,9 +104,9 @@ function load_stylesheets()
 {
 		// wp_register_style('stylesheet', get_template_directory_uri() . '/fonta.css',array(),false,'all');
 		wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-    wp_enqueue_style('inhabitent-stylesheet', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
+
 
 /**
  * Custom template tags for this theme.

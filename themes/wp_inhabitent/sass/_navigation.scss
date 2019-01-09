@@ -4,25 +4,17 @@
 
 /* Links */
 
-// a {
-// 	color: $color__link;
+a {
+	text-transform: uppercase;
+	color: #248a83;
+	text-decoration: none;
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
 
-// 	&:visited {
-// 		color: $color__link-visited;
-// 	}
-// 	&:hover,
-// 	&:focus,
-// 	&:active {
-// 		color: $color__link-hover;
-// 	}
-// 	&:focus {
-// 		outline: thin dotted;
-// 	}
-// 	&:hover,
-// 	&:active {
-// 		outline: 0;
-// 	}
-// }
+
 
 /* Menus */
 
@@ -32,14 +24,13 @@
   justify-content: space-between;
 }
 .nav-wrapper{
-	
+	padding: 8px 0px;
 	width:1024px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	// position: fixed;
 	margin:0 auto;
-
 }
 
 .main-navigation {
@@ -49,7 +40,7 @@
   padding: 0;
   list-style: none;
 	text-align: center;
-	
+	align-items: center;
 
 	ul {
 		display: flex;
@@ -57,6 +48,7 @@
 		margin: 0;
 		padding-left: 0;
 		justify-content: space-evenly;
+		
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);

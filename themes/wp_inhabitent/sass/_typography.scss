@@ -17,12 +17,18 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	text-transform: uppercase;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-family: $font__inhabitent;
+	font-size: 16px ;
+  line-height: 1.75;
 }
 
 dfn, cite, em, i {

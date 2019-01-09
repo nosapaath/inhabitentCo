@@ -13,13 +13,13 @@
 							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
 						<div>
-							<i class="fas fa-phone"></i>
+						<i class="fa fa-phone"></i>
 							<a href="tel:5553434567891">778-456-7891</a>
 						</div>
-						<p>
-							<span><i class="fas fa-facebook-square"></i></span>
-							<span><i class="fas fa-twitter-square"></i></span>
-							<span><i class="fa fa-google-plus-square"></i></span>
+						<p class="footer-social-media-link">
+							<i class="fab fa-facebook-square"></i>
+							<i class="fab fa-twitter-square"></i>
+							<i class="fab fa-google-plus-square"></i>
 						</p>
 					</div>
 					<div id="hours_info">
@@ -30,9 +30,12 @@
 					</div>
 				</div>
 				
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
+				<div class="footer-logo">
+					<img src="<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>" />
+				</div>
+
+
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
