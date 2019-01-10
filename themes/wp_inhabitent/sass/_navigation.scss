@@ -109,25 +109,28 @@ a {
 	}
 }
 
+.shop-navigation{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding:20px;
+	border-bottom: 1px dashed grey;
+	margin-bottom: 48px;
+	ul{
+		display: flex;
+		flex-flow: row nowrap;
+		width: 20vw;
+		justify-content: space-between;
+	}
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
-
-
-
-
-
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 .comment-navigation,
 .posts-navigation,

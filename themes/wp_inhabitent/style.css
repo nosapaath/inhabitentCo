@@ -234,39 +234,46 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("./fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("./fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  src: url("../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("./fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("./fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("./fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("./fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+  src: url("../fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("./fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("./fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
+  src: url("../fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Novecentosanswide';
-  src: url("./fonts/Novecentosanswide/Novecentosanswide-DemiBold.woff2") format("woff2"), url("./fonts/Novecentosanswide/Novecentosanswide-DemiBold.woff") format("woff"), url("./fonts/Novecentosanswide/Novecentosanswide-DemiBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Novecentosanswide-Normal';
-  src: url("./fonts/Novecentosanswide/Novecentosanswide-Normal.woff2") format("woff2"), url("./fonts/Novecentosanswide/Novecentosanswide-Normal.woff") format("woff"), url("./fonts/Novecentosanswide/Novecentosanswide-Normal.ttf") format("truetype");
+  font-family: 'Novecento sans wide Normal';
+  src: url("../fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../fonts/Novecentosanswide-Normal.woff") format("woff"), url("../fonts/Novecentosanswide-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento sans wide';
+  src: url("../fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../fonts/Novecentosanswide-DemiBold.woff") format("woff"), url("../fonts/Novecentosanswide-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/merriweather-v19-latin-300.eot");
+  src: local("Merriweather Light"), local("Merriweather-Light"), url("../fonts/merriweather-v19-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-v19-latin-300.woff2") format("woff2"), url("../fonts/merriweather-v19-latin-300.woff") format("woff"), url("../fonts/merriweather-v19-latin-300.ttf") format("truetype"), url("../fonts/merriweather-v19-latin-300.svg#Merriweather") format("svg"); }
 
 /*--------------------------------------------------------------
 # Typography
@@ -564,16 +571,40 @@ a {
     display: block;
     text-decoration: none; }
 
+.shop-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-bottom: 1px dashed grey;
+  margin-bottom: 48px; }
+  .shop-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    width: 20vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -725,6 +756,15 @@ a {
   .entry-title a {
     color: white; }
 
+.site-header {
+  top: 0; }
+
+.wpcf7-form {
+  text-transform: uppercase; }
+
+.comment-required {
+  color: #d99054; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -811,8 +851,8 @@ object {
           justify-content: center; }
 
 .about-hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../../images/about-hero.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/about-hero.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/about-hero.jpg") no-repeat center bottom;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -826,8 +866,22 @@ object {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 50px; }
+  .about-content p {
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 300; }
   .about-content h2 {
-    text-align: center; }
+    text-align: center;
+    font-size: 2.1rem; }
+
+.about-wrapper {
+  padding-top: 98px; }
+  .about-wrapper h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2.4rem; }
+  .about-wrapper nav {
+    padding-top: 0px; }
 
 .block-container {
   display: -webkit-box;
@@ -970,11 +1024,9 @@ object {
     position: relative; }
 
 .wrapper-product {
-  margin-top: 50px;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 300px);
   grid-gap: 10px 10px; }
 
 .product-archive-img {
@@ -999,6 +1051,33 @@ object {
 
 .product-title {
   font-size: .9rem; }
+
+.find-content {
+  margin-top: 100px;
+  text-align: left;
+  max-width: 800px;
+  margin-bottom: 50px; }
+  .find-content p {
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 300; }
+  .find-content h2 {
+    font-size: 2.1rem; }
+
+.wpcf7 input[type=submit] {
+  background: #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif; }
 
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");

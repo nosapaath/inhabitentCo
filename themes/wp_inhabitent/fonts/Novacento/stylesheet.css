@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Novecento sans wide Normal';
+    src: url('Novecentosanswide-Normal.woff2') format('woff2'),
+        url('Novecentosanswide-Normal.woff') format('woff'),
+        url('Novecentosanswide-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento sans wide';
+    src: url('Novecentosanswide-DemiBold.woff2') format('woff2'),
+        url('Novecentosanswide-DemiBold.woff') format('woff'),
+        url('Novecentosanswide-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

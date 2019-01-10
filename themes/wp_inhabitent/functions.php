@@ -29,7 +29,8 @@ function red_starter_setup() {
     array(
 			'primary' => __( 'Primary Menu' ),
       'top_menu' => __('Top Menu', 'theme'),
-      'footer_menu' => __('Footer Menu', 'theme'),
+			'footer_menu' => __('Footer Menu', 'theme'),
+			'shop_menu' => __('Shop Menu'),
     )
 );
 

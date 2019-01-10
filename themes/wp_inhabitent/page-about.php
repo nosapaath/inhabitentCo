@@ -3,8 +3,8 @@
 get_header(); ?>
 
 <div class="logo-hero about-hero">
-			<h1><?php echo the_title();?></h1>
-			</div>
+	<h1><?php echo the_title();?></h1>
+</div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main about-content" role="main">

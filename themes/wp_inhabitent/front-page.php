@@ -17,12 +17,12 @@ get_header(); ?>
 	<h1>Shop Stuff</h1>
 	<div class="wrapper-shop">
 
-	<?php $terms = get_terms('shoptaxonomy' );
+	<?php $terms = get_terms('shoptaxonomy');
 		foreach ( $terms as $term ) { ?>
 			<div class="shop-items">
 			<img src="<?php echo get_template_directory_uri().'/images/product-type-icons/'.$term->name.'.svg'?>" alt="Do" width="70px">
 			<p><?php echo $term->description?></p>
-			<a class="front-journal-btn"><?php echo $term->name?> stuff</a>
+			<a href="<?php echo get_term_link($term); ?>" class="front-journal-btn"><?php echo $term->name?> stuff</a>
 			</div>
 	<?php }?>
 
