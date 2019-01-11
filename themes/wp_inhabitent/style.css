@@ -293,12 +293,11 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   text-transform: uppercase;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: 'Novecento Sans Web',sans-serif;
   letter-spacing: 2px; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem;
   font-family: Merriweather Web, serif;
   font-size: 16px;
   line-height: 1.75; }
@@ -986,7 +985,7 @@ object {
   border-radius: 0;
   color: #fff;
   cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: 'Novecento Sans Web',sans-serif;
   font-size: 14.4px;
   font-size: .9rem;
   line-height: 1;
@@ -1044,13 +1043,18 @@ object {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+          flex-direction: column; }
 
 .product-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: .9rem; }
+  .product-title p {
+    text-transform: uppercase; }
 
 .find-content {
   margin-top: 100px;
@@ -1077,7 +1081,32 @@ object {
   border: none;
   border-radius: 0;
   cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif; }
+  font-family: 'Novecento Sans Web',sans-serif; }
+
+.product-single-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.single-product-img {
+  width: 43%; }
+
+.single-product-info {
+  width: 48%; }
+
+.product-price {
+  font-family: 'Novecento Sans Web',sans-serif;
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-transform: uppercase; }
 
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
@@ -1123,3 +1152,38 @@ object {
           justify-content: space-between;
   width: 50%;
   height: 20px; }
+
+.home-blog {
+  padding-top: 50px; }
+
+.left-home {
+  display: inline-block;
+  width: 73%;
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%; }
+
+.right-home {
+  float: right;
+  width: 20%; }
+
+.entry-header img {
+  width: 1500px;
+  height: 100%; }
+
+.entry-header h2 {
+  width: 75%; }
+
+.entry-meta {
+  background-color: #248a83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Novecento Sans Web',sans-serif;
+  padding: .5rem 1.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  text-transform: uppercase; }
+
+.widget-area {
+  float: right; }

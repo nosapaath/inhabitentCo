@@ -16,28 +16,31 @@ get_header(); ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'shop_menu', 'menu_id' => 'Shop-Menu' ) ); ?>
 		</nav>
 
-		<section class="block-container">
+	<section class="block-container">
 		<div class="wrapper-product">
 			
 			<?php
-  		$args = array( 'post_type' => 'product', 'order' => 'ASC', 'offset' => 0, 'posts_per_page' => 16 );
-  		$productpost = get_posts( $args ); // returns an array of posts
-			?>
+  		$args = array( 
+				'post_type' => 'product', 
+				'order' => 'ASC', 
+				'offset' => 0, 
+				'posts_per_page' => 16 
+			);
 
-		<?php foreach ( $productpost as $post ) : setup_postdata( $post ); ?>
-			<div class="front-journal single-product">
-				<div class="product-archive-img">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
-				</div>
+  		$productpost = get_posts( $args ); 
 			
-			<div>
-				<p class="product-title"><?php the_title(); ?>................$<?php echo CFS()->get( 'price' ); ?>.00</p>
-			</div>	
-		</div>
-
-	<?php endforeach; wp_reset_postdata(); ?>
-</div>	
-</section>
+			foreach ( $productpost as $post ) : setup_postdata( $post ); ?>
+				<div class="front-journal single-product">
+					<div class="product-archive-img">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+					</div>
+					<div class="product-title">
+						<p><?php the_title(); ?>................$<?php echo CFS()->get( 'price' ); ?>.00</p>
+					</div>	
+				</div>
+			<?php endforeach; wp_reset_postdata(); ?>
+		</div>	
+	</section>
 		
 
 		</main><!-- #main -->

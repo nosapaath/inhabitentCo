@@ -1,0 +1,43 @@
+.home-blog {
+  padding-top: 50px;
+}
+
+.left-home{
+  display: inline-block;
+  width: 73%;
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+}
+
+.right-home{
+  float: right;
+  width: 20%;
+}
+
+.entry-header{
+  img{
+    width: 1500px;
+    height: 100%;
+  }
+  h2{
+    width: 75%;
+  }
+
+}
+
+.entry-meta{
+  background-color: #248a83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Novecento Sans Web',sans-serif;
+  padding: .5rem 1.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  text-transform: uppercase;
+}
+
+.widget-area{
+  float: right;
+}
