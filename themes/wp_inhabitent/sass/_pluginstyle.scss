@@ -1,0 +1,25 @@
+.contact_info{
+
+  div{
+    display: flex;
+    i{
+      line-height: 1.8;
+      margin-right: .5rem;
+      width: 20px;
+    }
+  }
+  .address-plugin{
+    text-transform: none;
+  }
+}
+
+.widget-area{
+  a{
+    text-transform: none;
+  }
+  ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+}

@@ -43,6 +43,73 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.contact_info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .contact_info div i {
+    line-height: 1.8;
+    margin-right: .5rem;
+    width: 20px; }
+
+.contact_info .address-plugin {
+  text-transform: none; }
+
+.widget-area a {
+  text-transform: none; }
+
+.widget-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -105,8 +172,7 @@ dfn {
   font-style: italic; }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 2em; }
 
 mark {
   background: #ff0;
@@ -234,37 +300,37 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  src: url("./fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("./fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
+  src: url("./fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("./fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+  src: url("./fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("./fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("../fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
+  src: url("./fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("./fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("./fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Novecento sans wide Normal';
-  src: url("../fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../fonts/Novecentosanswide-Normal.woff") format("woff"), url("../fonts/Novecentosanswide-Normal.ttf") format("truetype");
+  src: url("./fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("./fonts/Novecentosanswide-Normal.woff") format("woff"), url("./fonts/Novecentosanswide-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento sans wide';
-  src: url("../fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../fonts/Novecentosanswide-DemiBold.woff") format("woff"), url("../fonts/Novecentosanswide-DemiBold.ttf") format("truetype");
+  src: url("./fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("./fonts/Novecentosanswide-DemiBold.woff") format("woff"), url("./fonts/Novecentosanswide-DemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
@@ -272,8 +338,8 @@ th {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/merriweather-v19-latin-300.eot");
-  src: local("Merriweather Light"), local("Merriweather-Light"), url("../fonts/merriweather-v19-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-v19-latin-300.woff2") format("woff2"), url("../fonts/merriweather-v19-latin-300.woff") format("woff"), url("../fonts/merriweather-v19-latin-300.ttf") format("truetype"), url("../fonts/merriweather-v19-latin-300.svg#Merriweather") format("svg"); }
+  src: url("./fonts/merriweather-v19-latin-300.eot");
+  src: local("Merriweather Light"), local("Merriweather-Light"), url("./fonts/merriweather-v19-latin-300.eot?#iefix") format("embedded-opentype"), url("./fonts/merriweather-v19-latin-300.woff2") format("woff2"), url("./fonts/merriweather-v19-latin-300.woff") format("woff"), url("./fonts/merriweather-v19-latin-300.ttf") format("truetype"), url("./fonts/merriweather-v19-latin-300.svg#Merriweather") format("svg"); }
 
 /*--------------------------------------------------------------
 # Typography
@@ -293,12 +359,13 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   text-transform: uppercase;
-  font-family: 'Novecento Sans Web',sans-serif;
-  letter-spacing: 2px; }
+  font-family: 'Novecento sans wide',sans-serif;
+  line-height: 1.25;
+  font-weight: 600; }
 
 /* Copy */
 p {
-  font-family: Merriweather Web, serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   line-height: 1.75; }
 
@@ -735,13 +802,13 @@ a {
 
 /* Content wrapper */
 .content-area {
-  max-width: 1120px;
   margin: 0 auto; }
 
 .entry-header {
-  position: relative; }
+  position: relative;
+  z-index: -1; }
 
-.entry-title {
+.entry-title-green {
   background-color: #248a83;
   color: #fff;
   font-size: 33.6px;
@@ -752,7 +819,7 @@ a {
   margin-top: 2.25rem;
   max-width: 75%;
   top: 0; }
-  .entry-title a {
+  .entry-title-green a {
     color: white; }
 
 .site-header {
@@ -849,26 +916,23 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.about-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/about-hero.jpg") no-repeat center bottom;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  top: 0; }
-  .about-hero h1 {
-    color: #fff;
-    font-size: 48px; }
-
 .about-content {
-  text-align: left;
-  max-width: 800px;
+  max-width: 100vw;
   margin: 0 auto;
   margin-bottom: 50px; }
+  .about-content header {
+    width: 100vw;
+    height: 100vh; }
+    .about-content header h1 {
+      color: #fff;
+      font-size: 3rem; }
   .about-content p {
     font-size: 1.15rem;
     font-style: normal;
-    font-weight: 300; }
+    font-weight: 300;
+    width: 800px;
+    text-align: left;
+    margin: 10px auto; }
   .about-content h2 {
     text-align: center;
     font-size: 2.1rem; }
@@ -906,23 +970,8 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-bottom: 50px; }
-
-.adventure-blog-wrapper {
-  max-width: 1120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  height: 721px;
-  margin-bottom: 20px; }
+  margin-bottom: 50px;
+  height: 272px; }
 
 .shop-items {
   border: 1px solid #e1e1e1;
@@ -994,33 +1043,8 @@ object {
   text-transform: uppercase;
   position: absolute; }
 
-.adventure-blocks {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 265px 265px;
-  width: 1120px;
-  grid-template-areas: "one one two two" "one one three four";
-  grid-gap: 20px 20px;
-  margin-bottom: 30px; }
-  .adventure-blocks div {
-    overflow: hidden; }
-    .adventure-blocks div img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      height: 100%;
-      width: 100%; }
-  .adventure-blocks :first-child {
-    grid-area: one;
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .adventure-blocks :nth-child(2) {
-    grid-area: two; }
-  .adventure-blocks :nth-child(3) {
-    grid-area: three; }
-  .adventure-blocks :nth-child(4) {
-    grid-area: four; }
-  .adventure-blocks a {
-    position: relative; }
+.search {
+  position: relative; }
 
 .wrapper-product {
   margin-bottom: 50px;
@@ -1056,8 +1080,15 @@ object {
   .product-title p {
     text-transform: uppercase; }
 
+.find-wrapper {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .find-content {
-  margin-top: 100px;
   text-align: left;
   max-width: 800px;
   margin-bottom: 50px; }
@@ -1084,8 +1115,8 @@ object {
   font-family: 'Novecento Sans Web',sans-serif; }
 
 .product-single-wrapper {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  margin: 80px auto;
+  width: 1120px; }
 
 .single-product-post {
   display: -webkit-box;
@@ -1108,6 +1139,17 @@ object {
   margin-top: 0;
   text-transform: uppercase; }
 
+/* Search Entry */
+.social-link-product button {
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  background-color: transparent;
+  padding: .75rem 1.5rem;
+  text-transform: uppercase; }
+  .social-link-product button i {
+    margin-right: 10px; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   background-size: cover;
@@ -1118,9 +1160,12 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 20px; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .footer-info {
+  margin: 48px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,6 +1187,10 @@ object {
     text-transform: lowercase; }
   .footer-info span {
     font-weight: bold; }
+  .footer-info .widget-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .footer-social-media-link {
   display: -webkit-box;
@@ -1153,18 +1202,111 @@ object {
   width: 50%;
   height: 20px; }
 
+.footer-logo {
+  padding-right: 80px;
+  margin: 48px 0;
+  width: 50%;
+  text-align: right; }
+  .footer-logo img {
+    max-width: 50%; }
+
+.adventure-story {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  text-align: left;
+  margin: 1.5rem; }
+  .adventure-story h3 {
+    font-family: 'Merriweather Web',serif;
+    font-weight: 400;
+    margin-top: 24px;
+    text-transform: none;
+    color: #fff; }
+
+.button-white {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent; }
+
+.adventure-blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 265px 265px;
+  width: 1120px;
+  grid-template-areas: "one one two two" "one one three four";
+  grid-gap: 20px 20px;
+  margin-bottom: 30px; }
+  .adventure-blocks h3:first-child {
+    font-size: 48px; }
+  .adventure-blocks h3:nth-child(2) {
+    font-size: 38.4px; }
+  .adventure-blocks h3:nth-child(3, 4) {
+    font-size: 25.6px; }
+  .adventure-blocks :first-child {
+    grid-area: one;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .adventure-blocks :nth-child(2) {
+    grid-area: two; }
+  .adventure-blocks :nth-child(3) {
+    grid-area: three; }
+  .adventure-blocks :nth-child(4) {
+    grid-area: four; }
+  .adventure-blocks a {
+    position: relative; }
+
+.andventure-single-block {
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .andventure-single-block img {
+    left: 50%;
+    max-height: 620px;
+    max-width: none;
+    position: absolute;
+    top: 75%;
+    -webkit-transform: translate(-50%, -75%);
+            transform: translate(-50%, -75%);
+    width: auto; }
+
+.adventure-blog-wrapper {
+  max-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  height: 721px;
+  margin-bottom: 20px;
+  margin: 0 auto; }
+
 .home-blog {
-  padding-top: 50px; }
+  padding-top: 50px;
+  width: 1120px; }
 
 .left-home {
   display: inline-block;
   width: 73%;
   border-right: 1px solid #e1e1e1;
-  padding-right: 5%; }
+  padding: 48px 56px 48px 0px; }
 
 .right-home {
   float: right;
-  width: 20%; }
+  width: 23%;
+  padding-left: 5%;
+  padding-top: 48px; }
+  .right-home h1 {
+    line-height: 1.25; }
 
 .entry-header img {
   width: 1500px;
@@ -1187,3 +1329,38 @@ object {
 
 .widget-area {
   float: right; }
+
+.post-template-default .site-content {
+  max-width: 1120px;
+  margin: 50px auto; }
+
+.error-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+  width: 1120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .error-wrap h1 {
+    font-size: 2.4rem; }
+  .error-wrap h2 {
+    font-size: 1.5rem; }
+  .error-wrap ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+    .error-wrap ul a {
+      text-transform: none; }
+  .error-wrap .page-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }

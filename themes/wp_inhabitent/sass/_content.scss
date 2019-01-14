@@ -50,21 +50,15 @@
 
 /* Content wrapper */
 .content-area{
-	max-width: 1120px;
 	margin: 0 auto;
 }
-// .site-main{
-// 	width:70%;
-// }
 
-// #asideside { 
-//   width: 30%;
-// }
 .entry-header{
 	position: relative;
+	z-index: -1;
 }
 
-.entry-title{
+.entry-title-green{
 	background-color: #248a83;
   color: #fff;
   font-size: 33.6px;

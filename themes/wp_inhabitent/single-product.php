@@ -16,11 +16,8 @@ get_header(); ?>
 
 		<?php endwhile;?>
 
-		</main><!-- #main -->
-		<aside id="asideside">
-		<?php get_sidebar(); ?>
-	</aside>
-	</div><!-- #primary -->
+		</main>
+	</div>
 	
 
 <?php get_footer(); ?>

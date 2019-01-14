@@ -20,33 +20,33 @@
   justify-content: center;
 }
 
-.about-hero{
-  background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url("../../images/about-hero.jpg") no-repeat center bottom;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  top: 0;
-  h1{
-    color: #fff;
-    font-size: 48px;
-  }
-}
 
 
 .about-content{
-  text-align: left;
-  max-width: 800px;
+  max-width: 100vw;
   margin: 0 auto;
   margin-bottom: 50px;
+  header{
+    width: 100vw;
+    height: 100vh;
+    h1{
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
   p{
     font-size: 1.15rem;
     font-style: normal;
     font-weight: 300;
+    width: 800px;
+    text-align: left;
+    margin: 10px auto
   }
   h2{
     text-align: center;
     font-size:2.1rem;
   }
+
 }
 
 .about-wrapper{
@@ -74,17 +74,9 @@
   justify-content: space-between;
   text-align: center;
   margin-bottom: 50px;
+  height: 272px;
 }
 
-.adventure-blog-wrapper{
-  max-width: 1120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  height:721px;
-  margin-bottom: 20px;
-}
 .shop-items{
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
@@ -143,42 +135,11 @@
   position: absolute;
 }
 
-.adventure-blocks{
-    
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 265px 265px;
-  width: 1120px;
-  grid-template-areas: 
-    "one one two two"
-    "one one three four";
-  grid-gap: 20px 20px;
-  margin-bottom: 30px;
-  div{
-    overflow: hidden;
-    img{
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-  }
-  :first-child{
-    grid-area: one;
-    object-fit: cover;
-  }
-  :nth-child(2){
-    grid-area: two;
-  }
-  :nth-child(3){
-    grid-area: three;
-  }
-  :nth-child(4){
-    grid-area: four;
-  }
-  a{
-    position: relative;
-  }
+.search{
+  position: relative;
 }
+
+
 
 .wrapper-product{
   margin-bottom: 50px;
@@ -209,9 +170,14 @@
       text-transform: uppercase;
   }
 }
+.find-wrapper{
+  width:1120px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+}
 
 .find-content{
-  margin-top: 100px;
   text-align: left;
   max-width: 800px;
   margin-bottom: 50px;
@@ -224,6 +190,8 @@
     font-size:2.1rem;
   }
 }
+
+
 
 .wpcf7{
   input[type=submit]{
@@ -243,8 +211,8 @@
 }
 
 .product-single-wrapper{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  margin: 80px auto;
+  width: 1120px;
 }
 
 .single-product-post{
@@ -268,3 +236,18 @@
   text-transform: uppercase;
 }
 
+
+/* Search Entry */
+.social-link-product{
+  button{
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    background-color: transparent;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    i{
+      margin-right: 10px;
+    }
+  }
+}

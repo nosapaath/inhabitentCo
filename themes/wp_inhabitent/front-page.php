@@ -52,31 +52,37 @@ get_header(); ?>
 </section>
 
 <section class="adventure-blog-wrapper">
-	<h1>Latest Adventure</h1>
+<h1>Latest Adventure</h1>
 	<div class="adventure-blocks">
+
+	<?php
+  $arg = array( 'post_type' => 'adventures', 'order' => 'ASC', 'offset' => 0, 'posts_per_page' => 4 );
+  $adventure = get_posts( $arg ); // returns an array of posts
+	?>
+
+	<?php foreach ( $adventure as $post ) : setup_postdata( $post ); ?>
+
 		<div class="andventure-single-block">
-			<img class="adventure-one" src="<?php echo get_template_directory_uri().'/images/adventure-photos/canoe-girl.jpg'?>">
-		</div>
-		<div class="andventure-single-block">
-			<img class="adventure-two" src="<?php echo get_template_directory_uri().'/images/adventure-photos/beach-bonfire.jpg'?>">
-		</div>
-		<div class="andventure-single-block">
-			<img class="adventure-three" src="<?php echo get_template_directory_uri().'/images/adventure-photos/mountain-hikers.jpg'?>">
-		</div>
-		<div class="andventure-single-block">
-			<img class="adventure-four"src="<?php echo get_template_directory_uri().'/images/adventure-photos/night-sky.jpg'?>">
+			<div><?php the_post_thumbnail(); ?></div>
+			<div class="adventure-story">
+				<h3><?php the_title(); ?></h3>
+				<a class="button-white" href="<?php the_permalink();?>">Read More</a>
+			</div>
 		</div>
 
-		<a class="front-journal-btn" href="">More Adventures</a>	
+	<?php endforeach; wp_reset_postdata(); ?>
 
 	</div>
 </section>
 
-
-
-		
 	</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
 
+
+
+
+
+
+			

@@ -27,13 +27,36 @@
 			<header id="masthead" class="site-header" role="banner">
 			<div class="nav-wrapper">
 			
+			<?php
+				if(is_front_page()) :
+				?>
+				<div class="site-branding">
+					<a href="<?php echo home_url();?>"><img width="50px" height="" src="<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-tent.svg'?>" alt="inhabitent logos"/></a>
+				</div>
+				
+				<?php else :?>
 				<div class="site-branding">
 					<a href="<?php echo home_url();?>"><img width="50px" height="" src="<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-tent-white.svg'?>" alt="inhabitent logos"/></a>
 				</div><!-- .site-branding -->
+				<?php endif; ?>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+				<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+	
+	<fieldset>
+		<label>
+			<input type="search" class="search-field" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		</label>
+		<button class="search-submit">
+			<span class="icon-search" aria-hidden="true">
+				<i class="fa fa-search"></i>
+			</span>
+			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+		</button>
+	</fieldset>
+</form>
 			</div>
 
 			</header><!-- #masthead -->

@@ -1,0 +1,25 @@
+.error-wrap{
+  display: flex;
+  margin: 50px auto;
+  width: 1120px;
+  justify-content: space-between;
+  h1{
+    font-size: 2.4rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    a{
+      text-transform: none;
+    }
+  }
+  .page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

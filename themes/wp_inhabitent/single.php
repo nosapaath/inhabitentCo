@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main left-home" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,7 +26,7 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-		<aside id="asideside">
+		<aside class="right-home">
 		<?php get_sidebar(); ?>
 	</aside>
 	</div><!-- #primary -->
