@@ -3,6 +3,8 @@ $(document).ready(function() {
     let $nav = $('.site-header');
 
     $nav.toggleClass('scrolled', $(this).scrollTop() > $('.logo-hero').height());
-})
 
+    
+
+  })
 });
