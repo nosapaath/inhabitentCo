@@ -1316,7 +1316,7 @@ object {
     text-decoration: none;
     text-transform: lowercase; }
   .footer-info span {
-    font-weight: bold; }
+    font-weight: bolder; }
   .footer-info .widget-area {
     display: -webkit-box;
     display: -ms-flexbox;

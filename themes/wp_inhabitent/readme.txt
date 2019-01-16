@@ -1,19 +1,23 @@
-=== RED Starter Theme ===
+=== Inhabitent Custom Theme ===
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
-
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called RED Starter Theme, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+This is a custom theme for outdoor company called Inhabitent. 
+
+== Technology == 
+
+For this project I had to use a server (MAMP) and install wordpress. 
+First I created a database in MAMP and connect it to my wordpress while I first login to wordpress. 
+
+In VScode, I created templates for different pages/post using php.
+Other technologies used were gulp and git. 
+
+Gulp Watch is very useful when you are working with php as you can't see what you are coding right away in the front-end. 
+ 
 
 == Installation ==
 	
@@ -25,14 +29,14 @@ Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I
 
 = Does this theme support any plugins? =
 
-RED Starter Theme includes support for Infinite Scroll in Jetpack.
+This Them includes 2 plugins: hours-buswidget and business-widget 
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - Jan 15 2019 =
 * Initial release
 
 == Credits ==
-
+* Credit to Fontawesome for the search svg. https://fontawesome.com/license
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)

@@ -16,7 +16,7 @@
   line-height: 1;
   h3{
   @include font-size(1.2); 
-  color:#d99054;
+  color:$brand_orange;
   margin-bottom: $base__space-unit / 2;
   text-transform: uppercase;
   }
@@ -26,7 +26,7 @@
     text-transform: lowercase;
   }
   span{
-    font-weight: bold;
+    font-weight: bolder;
   }
   .widget-area{
     display: flex;
