@@ -55,32 +55,79 @@
 
 .entry-header{
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 }
 
 .entry-title-green{
-	background-color: #248a83;
-  color: #fff;
-  font-size: 33.6px;
+	background-color: $brand_green;
+  color: $main_background_color;
   font-size: 2.1rem;
-	left: 0;
 	padding: .75rem 1.5rem;
   position: absolute;
   margin-top: 2.25rem;
   max-width: 75%;
 	top: 0;
+	left: 0;
+	z-index: 99999;
 	a{
-		color: white;
+		color: $main_background_color;
 	}
 }
 
 .site-header{
 	top:0;
+	z-index: 99999;
+	background-color: hsla(0,0%,100%,.85);
+	border-bottom: $solid-border;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .wpcf7-form{
 	text-transform: uppercase;
 }
 .comment-required{
-	color: #d99054;
+	color: $brand_orange;
+}
+
+.comment-author-avatar img {
+	border-radius: 50%;
+	height: 64px;
+	margin-right: 1.5rem;
+	overflow: hidden;
+	width: 64px;
+	}
+
+.comment-body{
+	display: flex;
+	margin-bottom: 24px;
+	p {
+    margin-bottom: .75rem;
+}
+}
+
+.comment-list>li {
+	border-bottom: 1px solid #e1e1e1;
+	list-style-type: none;
+}
+
+.children li {
+	border-top: 1px solid #e1e1e1;
+}
+
+.comment {
+	padding-top: 1.5rem;
+}
+
+.comment-author cite {
+	text-transform: capitalize;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.comment-metadata {
+	color: $brand_grey_light;
+	margin-bottom: $base__space-unit / 2;
 }

@@ -15,10 +15,12 @@
     <?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content single-product-info">
+	<div class="single-product-info">
     <?php the_title( '<h1>', '</h1>' ); ?>
-    <p class="product-price"><?php echo CFS()->get( 'price' ); ?></p>
-    <?php the_content(); ?>
+    <p class="product-price">$ <?php echo CFS()->get( 'price' ); ?>.00</p>
+    <div class="product-content">
+        <?php the_content(); ?>
+    </div>
     <div class="social-link-product">
         <button>
             <i class="fab fa-facebook"></i><span>Like</span>

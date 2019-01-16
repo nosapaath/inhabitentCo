@@ -24,6 +24,9 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	add_theme_support('menus');
 
+	// add HTML5
+	add_theme_support('html5', array('search-form'));
+
 	register_nav_menus(
 
     array(
@@ -92,8 +95,14 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
+	// include custom jQuery
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	wp_enqueue_script('inhabitent-js', get_template_directory_uri() .'/js/main.js', array('jquery'), null, true);
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -118,9 +127,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-/*
-* Menu Customization
-*/
-

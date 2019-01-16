@@ -4,7 +4,7 @@ get_header(); ?>
 			
 	<div id="primary" class="content-area find-wrapper">
 		<main id="main" class="site-main find-content left-home" role="main">
-    <h1><?php echo the_title();?></h1>
+    <h2><?php echo the_title();?></h2>
       
     
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();

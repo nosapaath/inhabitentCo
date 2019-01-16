@@ -6,15 +6,13 @@
 
 a {
 	text-transform: uppercase;
-	color: #248a83;
+	color: $brand_green;
 	text-decoration: none;
 	&:hover,
 	&:active {
 		outline: 0;
 	}
 }
-
-
 
 /* Menus */
 
@@ -24,17 +22,15 @@ a {
   justify-content: space-between;
 }
 .nav-wrapper{
-	padding: 8px 0px;
-	width:1024px;
+	padding: 5px 0px;
+	width:1120px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	// position: fixed;
 	margin:0 auto;
 }
 
 .main-navigation {
-	clear: both;
 	display: flex;
 	margin: 0;
   padding: 0;
@@ -114,13 +110,14 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding:20px;
+	padding:40px;
 	border-bottom: 1px dashed grey;
-	margin-bottom: 48px;
+	margin-bottom: 50px;
+	font-size: 1.2rem;
 	ul{
 		display: flex;
 		flex-flow: row nowrap;
-		width: 20vw;
+		width: 30vw;
 		justify-content: space-between;
 	}
 }
@@ -150,5 +147,15 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+
+.green-navigation{
+	a{
+		color:$brand_green;
+		&:hover{
+			color:$brand_purple;
+		}
 	}
 }

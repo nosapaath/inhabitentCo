@@ -2,34 +2,6 @@
 # Forms
 --------------------------------------------------------------*/
 
-/* Buttons */
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-
-	&:hover {
-		border-color: #ccc #bbb #aaa;
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	}
-
-	&:active,
-	&:focus {
-		border-color: #aaa #bbb #bbb;
-		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	}
-}
 
 /* Fields */
 
@@ -39,12 +11,12 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
+	color: $brand_orange;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 
 	&:focus {
-		color: #111;
+		color: $brand_orange;
 	}
 }
 
@@ -56,7 +28,35 @@ input[type="search"] {
 	padding: 3px;
 }
 
-textarea {
-	padding-left: 3px;
-	width: 100%;
+.site-header .search-form {
+	margin-left: 10px;
+	right: 200px;
+	top: 200px;
+}
+
+.site-header .search-field {
+	background-color: transparent;
+	background-image: url(search-solid.svg);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	border: none;
+	cursor: pointer;
+	height: 20px;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	width: 0;
+}
+
+.site-header .search-field:focus {
+	background-color: transparent;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+}
+.search-form
+.search-submit { 
+display:none;
 }

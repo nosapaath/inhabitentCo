@@ -1,0 +1,19 @@
+.scrolled {
+  color: black;
+  background: white;
+  transition: background-color 200ms linear;
+  background-color: hsla(0,0%,100%,.85);
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.logo-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg{
+    width:100%;
+    height: 100%;
+  }
+}
+
+

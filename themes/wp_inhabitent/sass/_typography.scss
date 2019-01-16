@@ -3,12 +3,11 @@
 --------------------------------------------------------------*/
 
 body,
-button,
 input,
 select,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
+	font-family: $base_font;
 	@include font-size(1);
 	line-height: $font__line-height-body;
 }
@@ -20,7 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
   font-family: 'Novecento sans wide',sans-serif;
 	line-height: 1.25;
-	font-weight: 600;
+	font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* Copy */
@@ -29,7 +29,8 @@ p {
 	// margin-bottom: $base__space-unit;
 	font-family: $font__inhabitent;
 	font-size: 16px ;
-  line-height: 1.75;
+	line-height: 1.75;
+	margin-bottom: 10px;
 }
 
 dfn, cite, em, i {
@@ -45,10 +46,10 @@ address {
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
+	background: $main_background_color;
+	font-family: $font__main;
 	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
+	line-height: $base_line_height;
 	margin-bottom: 1.6rem;
 	max-width: 100%;
 	overflow: auto;
@@ -56,17 +57,17 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: $font__code;
+	font-family: $font__main;
 	@include font-size(0.9375);
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
+	border-bottom: 1px dotted $brand_grey_medium;
 	cursor: help;
 }
 
 mark, ins {
-	background: $color__background-ins;
+	background: $main_background_color;
 	text-decoration: none;
 }
 

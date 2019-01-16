@@ -1,0 +1,50 @@
+.archive{
+  .page-title{
+    margin-bottom: 2rem;
+  }
+}
+
+.adventure-wrapper-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,548px);
+  grid-gap: 1.5rem;
+  margin-bottom: 4.5rem;
+  .adventure-single{
+    position: relative;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+    .adventure-story{
+      h2{
+      font-family: $font__main;
+      font-size: 48px;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 4.5rem;
+      text-transform: none;
+      color: $main_background_color;
+      }
+    }
+  }
+}
+
+.adventures-template-default{
+  h2{
+    max-width: $content_800;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 2.4rem;
+  }
+  .author{
+    text-transform: uppercase;
+  }
+  .social-link-product{
+    max-width: $content_800;
+    margin: 0 auto;
+    i{
+      margin-right: 5px;
+    }
+  }
+}

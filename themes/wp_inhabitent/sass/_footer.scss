@@ -15,7 +15,10 @@
   color: white;
   line-height: 1;
   h3{
-    color:#d99054;
+  @include font-size(1.2); 
+  color:#d99054;
+  margin-bottom: $base__space-unit / 2;
+  text-transform: uppercase;
   }
   a{
     color: white;
@@ -45,4 +48,21 @@
   img{
     max-width: 50%;
   }
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  p {
+    margin-bottom: $base__space-unit / 3;
+ }
+ i {
+  @include font-size(1.25);
+  margin-right: .5rem;
+}
+}
+
+.entry-footer{
+  margin-bottom: 20px;
 }

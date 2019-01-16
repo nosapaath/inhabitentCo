@@ -1,16 +1,11 @@
 <?php
-/**
- * The template for displaying product archive pages.
- *
- * @package inhabitent
- */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area about-wrapper">
 		<main id="main" class="site-main" role="main">
 
-		<h1>SHOP STUFF</h1>
+		<h1 class="page-title">Shop Stuff</h1>
 
 		<nav id="site-navigation" class="main-navigation shop-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'shop_menu', 'menu_id' => 'Shop-Menu' ) ); ?>
@@ -35,7 +30,7 @@ get_header(); ?>
 						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
 					</div>
 					<div class="product-title">
-						<p><?php the_title(); ?>................$<?php echo CFS()->get( 'price' ); ?>.00</p>
+						<h2 class="product-entry"><?php the_title(); ?></h2><span class="price-product">$<?php echo CFS()->get( 'price' ); ?>.00</span>
 					</div>	
 				</div>
 			<?php endforeach; wp_reset_postdata(); ?>

@@ -1,9 +1,4 @@
 <?php
-/**
- * The template for displaying comments.
- *
- * @package RED_Starter_Theme
- */
 
 /*
  * If the current post is protected by a password and

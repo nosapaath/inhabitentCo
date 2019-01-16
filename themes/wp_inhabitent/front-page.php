@@ -14,7 +14,7 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
 <section class="block-container">
-	<h1>Shop Stuff</h1>
+	<h2>Shop Stuff</h2>
 	<div class="wrapper-shop">
 
 	<?php $terms = get_terms('shoptaxonomy');
@@ -22,7 +22,7 @@ get_header(); ?>
 			<div class="shop-items">
 			<img src="<?php echo get_template_directory_uri().'/images/product-type-icons/'.$term->name.'.svg'?>" alt="Do" width="70px">
 			<p><?php echo $term->description?></p>
-			<a href="<?php echo get_term_link($term); ?>" class="front-journal-btn"><?php echo $term->name?> stuff</a>
+			<a href="<?php echo get_term_link($term); ?>" class="button-inhabitent"><?php echo $term->name?> stuff</a>
 			</div>
 	<?php }?>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 </section>
 
 <section class="block-container">
-<h1>Inhabitent Journal</h1>
+<h2>Inhabitent Journal</h2>
 <div class="wrapper-shop">
 <?php
   $args = array( 'post_type' => 'post', 'order' => 'DSC', 'offset' => 0, 'posts_per_page' => 3 );
@@ -41,9 +41,9 @@ get_header(); ?>
 		<div class="front-journal">
 			<div class="front-journal-photo"><?php the_post_thumbnail( 'large' ); ?></div>
 			<div class="front-journal-info">
-				<span><?php the_date(); ?> / <?php comments_number();?></span>
-				<h2 class="front-journal-title"><?php the_title(); ?></h2>
-				<a href="<?php the_permalink(); ?>" class="front-journal-btn">Read Entry</a>
+				<span><?php echo get_the_time('Y F d');?> / <?php comments_number();?></span>
+				<h3 class="front-journal-title"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
+				<a href="<?php the_permalink(); ?>" class="button-black">Read Entry</a>
 			</div>	
 		</div>
 
@@ -52,7 +52,7 @@ get_header(); ?>
 </section>
 
 <section class="adventure-blog-wrapper">
-<h1>Latest Adventure</h1>
+<h2>Latest Adventure</h2>
 	<div class="adventure-blocks">
 
 	<?php
@@ -62,17 +62,20 @@ get_header(); ?>
 
 	<?php foreach ( $adventure as $post ) : setup_postdata( $post ); ?>
 
-		<div class="andventure-single-block">
+		<div class="adventure-single-block">
 			<div><?php the_post_thumbnail(); ?></div>
 			<div class="adventure-story">
-				<h3><?php the_title(); ?></h3>
+				<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
+				
 				<a class="button-white" href="<?php the_permalink();?>">Read More</a>
 			</div>
 		</div>
 
 	<?php endforeach; wp_reset_postdata(); ?>
-
 	</div>
+	<p>
+		<a class="button-inhabitent" href="<?php echo get_permalink().'/adventures';?>">More Adventures</a>
+	</p>
 </section>
 
 	</main><!-- #main -->

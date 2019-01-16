@@ -9,14 +9,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		
+	<h2 class="entry-title-green">
+		<a href="<?php echo the_permalink();?>"><?php echo the_title();?></a>
+	</h2>
+
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<h1 class="entry-title-green">
-		<a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-		</h1>
 
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
@@ -34,7 +33,8 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<p>
+	<a href="<?php the_permalink(); ?>" class="button-black">Read More</a>
+	</p>
+
 </article><!-- #post-## -->
