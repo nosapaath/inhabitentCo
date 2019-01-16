@@ -6,8 +6,10 @@
 !README.md
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
-!plugins/inhabitent-functionality/
-!plugins/business-hours-widget/
+!plugins/inhabitent-plugin/
+!plugins/hours-buswidget/
+!plugins/business-widget/
+!plugins/contact-form-7/
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/wp_inhabitent/
