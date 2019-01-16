@@ -18,10 +18,9 @@ In VScode, I created templates for different pages/post using php.
 Other technologies used were gulp and git. 
 
 Gulp Watch is very useful when you are working with php as you can't see what you are coding right away in the front-end. 
- 
 
 == Installation ==
-	
+
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.

@@ -18,8 +18,7 @@
 		<?php endif; ?>
 
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-
+			<?php red_starter_posted_on(); ?> / <?php comments_number(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
